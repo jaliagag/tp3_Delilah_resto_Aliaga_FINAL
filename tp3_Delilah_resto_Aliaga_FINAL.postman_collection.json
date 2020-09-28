@@ -1,0 +1,684 @@
+{
+	"info": {
+		"_postman_id": "ff1ef880-83b1-4ad2-afff-4484f6a997bc",
+		"name": "tp3_Delilah_resto_Aliaga_FINAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE USERS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userNickname",
+						"value": "thrallez",
+						"type": "text"
+					},
+					{
+						"key": "userName",
+						"value": "Jose",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "pmcentanni",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": "paula",
+							"type": "text"
+						},
+						{
+							"key": "userLastname",
+							"value": "centann",
+							"type": "text"
+						},
+						{
+							"key": "userEmail",
+							"value": "paula@paula",
+							"type": "text"
+						},
+						{
+							"key": "userPhone",
+							"value": "456",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "balcarce",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "456",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userNickname",
+						"value": "pmcentanni",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "pmcentanni",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "456",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "userNickname",
+							"value": "pmcentanni",
+							"disabled": true
+						},
+						{
+							"key": "user",
+							"value": "pmcentanni",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE DISH",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "dishName",
+						"value": "lomito",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "description",
+						"value": "completo",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjY0ODM2fQ.xLLUXeuFE6vIJY1S0JGnNhKqkCQJFbDsEX59Ulfdba0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dishName",
+							"value": "lomito",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "completo",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "350",
+							"type": "text"
+						},
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						},
+						{
+							"key": "requestedBy",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/dishes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ORDER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "09/25/2020",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "payMethod",
+							"value": "cash",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "114",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "350",
+							"type": "text"
+						},
+						{
+							"key": "userAddress",
+							"value": "casa",
+							"type": "text"
+						},
+						{
+							"key": "userPhone",
+							"value": "3141241",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjY0ODM2fQ.xLLUXeuFE6vIJY1S0JGnNhKqkCQJFbDsEX59Ulfdba0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userEmail",
+							"value": "jose@noemail.com",
+							"type": "text"
+						},
+						{
+							"key": "requestedBy",
+							"value": "jaliaga",
+							"type": "text"
+						},
+						{
+							"key": "userPhone",
+							"value": "88888",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/jaliaga",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"jaliaga"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE ORDER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/orders/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE DISH",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dishName",
+							"value": "lomito 348",
+							"type": "text"
+						},
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/dishes/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL USERS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjY0ODM2fQ.xLLUXeuFE6vIJY1S0JGnNhKqkCQJFbDsEX59Ulfdba0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE ORDER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/orders/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL ORDERS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL DISHES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjY0ODM2fQ.xLLUXeuFE6vIJY1S0JGnNhKqkCQJFbDsEX59Ulfdba0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/dishes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DISH",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/dishes/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ORDER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjAxMjU2OTc0fQ.GUTqlQmnuQ37u46Ztm31YhnhMndHglk21OCXGGHY6cs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userNickname",
+							"value": "jaliaga",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/orders/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
