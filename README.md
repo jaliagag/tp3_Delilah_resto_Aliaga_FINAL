@@ -2,7 +2,7 @@
 
 ## Requesites
 
-To test this API, you'll need to have NodeJS installed on your local machine as well as a text editor (SublimeText, VSCode, Atom...), Postman (or Insomnia) and a way viewing the database, either via CLI or PHPMyAdmin (Xampp, Wampp...)
+To test this API, you'll need to have NodeJS installed on your local machine as well as a text editor (SublimeText, VSCode, Atom...), Postman (or Insomnia) and a way of viewing the database, either via CLI or PHPMyAdmin (Xampp, Wampp...)
 
 Open up a Terminal and `cd` into the folder where the repository is hosted. Run this command:
 
